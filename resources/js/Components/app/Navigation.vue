@@ -1,7 +1,7 @@
 <template>
     <nav class="min-w-[200px]">
         <Link
-            :href="route('myFiles')"
+            :href="route('myfiles')"
             class="h-[80px] px-3 flex items-center gap-3"
         >
             <ApplicationLogo
@@ -14,7 +14,7 @@
 
             <div class="py-3">
                 <NavLink
-                    :href="route('myFiles')"
+                    :href="route('myfiles')"
                     :active="$page.url === '/my-files'"
                     >My Files</NavLink
                 >

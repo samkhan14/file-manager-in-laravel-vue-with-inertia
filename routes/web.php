@@ -27,7 +27,7 @@ Route::middleware('auth')->group(function () {
 // custom routes
 
 Route::controller(\App\Http\Controllers\FileController::class)->middleware(['auth'])->group(function () {
-    Route::get('/my-files', 'myFiles');
+    Route::get('my-files', 'myFiles')->name('myfiles');
     Route::get('/folder/create', 'createFolder')->name('folder.create');
 });
 
